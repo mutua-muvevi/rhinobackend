@@ -82,7 +82,7 @@ const adminSchema = new Schema({
 
 // creating the tokens
 adminSchema.methods.generateAdminToken = function() {
-    const token = jwt.sign({_id: this._id}, config.get('jwtPrivateKey'))
+    const token = jwt.sign({_id: this._id}, process.env.PRIVATE_KEY)
     return token
 }
 
