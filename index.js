@@ -33,7 +33,7 @@ connection();
 
 const privateKey = process.env.PRIVATE_KEY 
 
-if (!config.get("jwtPrivateKey")) {
+if (!privateKey) {
 		throw new Error('FATAL ERROR!!: jwtPrivateKey is not defined')
 	}
 
