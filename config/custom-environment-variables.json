@@ -1,0 +1,5 @@
+{
+    "jwtPrivateKey" : "RhinoJohn_jwtPrivateKey",
+    "DB": "Rhinojohn_DB",
+    "NODE_ENV": "production"
+}
