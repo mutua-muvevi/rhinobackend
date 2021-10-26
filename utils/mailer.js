@@ -17,7 +17,8 @@ const sendEmail = (fullname, email, company, telephone, message, cb) => {
             company,
             from: email,
             telephone,
-            to: "josephsam046@gmail.com",
+            to: "enquiries@rhinojonprimemetals.com",
+            // thinking of usinf envirnment variables here for all the auth and to
             text: [fullname, email, company, telephone, message]
         }
 
